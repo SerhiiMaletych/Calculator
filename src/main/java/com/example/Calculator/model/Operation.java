@@ -24,6 +24,10 @@ public class Operation {
         this.second = second;
     }
 
+    public Operation() {
+
+    }
+
 
     public String getOperation() {
         return operation;
