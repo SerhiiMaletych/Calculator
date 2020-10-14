@@ -29,4 +29,23 @@ public class CalculateController {
         model.addAttribute("result", service.add(operation));
         return "main-page";
     }
+
+    @PostMapping(value="/", params = "subtract")
+    public String subtract(@ModelAttribute("operation") Operation operation, Model model) {
+        model.addAttribute("result", service.subtract(operation));
+        return "main-page";
+    }
+
+    @PostMapping(value="/", params = "multiply")
+    public String multiply(@ModelAttribute("operation") Operation operation, Model model) {
+        model.addAttribute("result", service.multiply(operation));
+        return "main-page";
+    }
+
+    @PostMapping(value="/", params = "divide")
+    public String divide(@ModelAttribute("operation") Operation operation, Model model) {
+        model.addAttribute("result", service.divide(operation));
+        return "main-page";
+    }
+
 }
