@@ -1,7 +1,26 @@
 body {
-
+    background-color: darkkhaki;
 }
 
 .button {
+    background-color: lightblue;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+}
 
+.main-form {
+    height: 300px;
+    width: 500px;
+    background-color: azure;
+    margin-left: 380px;
+    margin-top: 50px;
+
+}
+
+.buttons {
+    margin-left: 150px;
+}
+.user-input {
+    margin-left: 50px;
 }
