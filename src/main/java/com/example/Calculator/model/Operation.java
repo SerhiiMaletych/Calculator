@@ -5,12 +5,12 @@ public class Operation {
 
 
     private String operation;
-    private int first;
-    private int second;
-    private int result;
+    private double first;
+    private double second;
+    private double result;
 
 
-    public Operation(int result) {
+    public Operation(double result) {
         this.result = result;
     }
 
@@ -19,7 +19,7 @@ public class Operation {
     }
 
 
-    public Operation(int first, int second) {
+    public Operation(double first, double second) {
         this.first = first;
         this.second = second;
     }
@@ -37,27 +37,27 @@ public class Operation {
         this.operation = operation;
     }
 
-    public int getFirst() {
+    public double getFirst() {
         return first;
     }
 
-    public void setFirst(int first) {
+    public void setFirst(double first) {
         this.first = first;
     }
 
-    public int getSecond() {
+    public double getSecond() {
         return second;
     }
 
-    public void setSecond(int second) {
+    public void setSecond(double second) {
         this.second = second;
     }
 
-    public int getResult() {
+    public double getResult() {
         return result;
     }
 
-    public void setResult(int result) {
+    public void setResult(double result) {
         this.result = result;
     }
 

@@ -7,16 +7,16 @@ import org.springframework.stereotype.Service;
 @Service
 public class CalculateService {
 
-    public int add(Operation model) {
+    public double add(Operation model) {
         return model.getFirst() + model.getSecond();
 
     }
 
-    public int subtract(Operation model) {
+    public double subtract(Operation model) {
         return model.getFirst() - model.getSecond();
     }
 
-    public int multiply(Operation model) {
+    public double multiply(Operation model) {
         return model.getFirst() * model.getSecond();
 
     }
