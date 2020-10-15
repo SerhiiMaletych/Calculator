@@ -7,6 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class CalculateController {
@@ -45,6 +46,12 @@ public class CalculateController {
     @PostMapping(value="/", params = "divide")
     public String divide(@ModelAttribute("operation") Operation operation, Model model) {
         model.addAttribute("result", service.divide(operation));
+        return "main-page";
+    }
+    @PostMapping(value="/", params="clear")
+    public String clear(@ModelAttribute("operation")  Operation operation, Model model ){
+        model.addAttribute("operation",  service.clearResult(operation));
+        model.addAttribute("result", 0);
         return "main-page";
     }
 

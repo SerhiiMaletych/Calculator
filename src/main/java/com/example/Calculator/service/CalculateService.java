@@ -27,4 +27,10 @@ public class CalculateService {
         return (double) model.getFirst() / model.getSecond();
     }
 
+    public Operation clearResult(Operation model) {
+    model.setFirst(0);
+    model.setSecond(0);
+    return model;
+    }
+
 }
