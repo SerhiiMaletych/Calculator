@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+
 @Controller
 public class CalculateController {
 
@@ -20,37 +21,43 @@ public class CalculateController {
     }
 
     @RequestMapping("/")
-    public String getCalculatorPage(Model model){
-        model.addAttribute("operation",operation);
+    public String getCalculatorPage(Model model) {
+        model.addAttribute("operation", operation);
         return "main-page";
     }
 
-    @PostMapping(value="/", params = "add")
+    @PostMapping(value = "/", params = "add")
     public String add(@ModelAttribute("operation") Operation operation, Model model) {
         model.addAttribute("result", service.add(operation));
         return "main-page";
     }
 
-    @PostMapping(value="/", params = "subtract")
+    @PostMapping(value = "/", params = "subtract")
     public String subtract(@ModelAttribute("operation") Operation operation, Model model) {
         model.addAttribute("result", service.subtract(operation));
         return "main-page";
     }
 
-    @PostMapping(value="/", params = "multiply")
+    @PostMapping(value = "/", params = "multiply")
     public String multiply(@ModelAttribute("operation") Operation operation, Model model) {
         model.addAttribute("result", service.multiply(operation));
         return "main-page";
     }
 
-    @PostMapping(value="/", params = "divide")
+    @PostMapping(value = "/", params = "divide")
     public String divide(@ModelAttribute("operation") Operation operation, Model model) {
         model.addAttribute("result", service.divide(operation));
         return "main-page";
     }
-    @PostMapping(value="/", params="clear")
-    public String clear(@ModelAttribute("operation")  Operation operation, Model model ){
-        model.addAttribute("operation",  service.clearResult(operation));
+    @PostMapping(value="/", params="sqrt")
+    public String sqrtValue(@ModelAttribute("operation")  Operation operation, Model model ){
+        model.addAttribute("result", service.sqrt(operation));
+        return "main-page";
+    }
+
+    @PostMapping(value = "/", params = "clear")
+    public String clear(@ModelAttribute("operation") Operation operation, Model model) {
+        model.addAttribute("operation", service.clearResult(operation));
         model.addAttribute("result", 0);
         return "main-page";
     }

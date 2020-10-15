@@ -24,13 +24,19 @@ public class CalculateService {
     public double divide(Operation model) {
         if (model.getFirst() == 0 || model.getSecond() == 0)
             return 0;
-        return (double) model.getFirst() / model.getSecond();
+        return model.getFirst() / model.getSecond();
+    }
+
+    public double sqrt(Operation model){
+        return Math.sqrt(model.getFirst());
     }
 
     public Operation clearResult(Operation model) {
-    model.setFirst(0);
-    model.setSecond(0);
-    return model;
+        model.setFirst(0);
+        model.setSecond(0);
+        return model;
     }
+
+
 
 }

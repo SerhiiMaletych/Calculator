@@ -7,12 +7,9 @@ public class Operation {
     private String operation;
     private double first;
     private double second;
-    private double result;
 
 
-    public Operation(double result) {
-        this.result = result;
-    }
+
 
     public Operation(String operation) {
         this.operation = operation;
@@ -53,13 +50,7 @@ public class Operation {
         this.second = second;
     }
 
-    public double getResult() {
-        return result;
-    }
 
-    public void setResult(double result) {
-        this.result = result;
-    }
 
 
 }
