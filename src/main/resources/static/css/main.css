@@ -24,21 +24,23 @@ body {
 .buttons {
     margin-left: 85px;
 }
+
 .user-input {
     display: inline-flex;
     margin-left: 30px;
-    font-size: 15px;
+    font-size: 20px;
+}
+
+.resultText {
+
+    font-size: 30px;
+
 }
 
 .result {
     margin: 5px;
     text-align: center;
     font-size: 40px;
-
-}
-.resultText {
-
-    font-size: 30px;
 
 }
 
