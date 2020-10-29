@@ -21,9 +21,10 @@ public class CalculateService {
 
     }
 
-    public double divide(Operation model) {
-        if (model.getFirst() == 0 || model.getSecond() == 0)
-            return 0;
+    public Object divide(Operation model) {
+        if ( model.getSecond() == 0) {
+            return "you cant divide by zero";
+        }
         return model.getFirst() / model.getSecond();
     }
 
