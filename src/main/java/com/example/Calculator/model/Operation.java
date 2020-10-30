@@ -25,6 +25,11 @@ public class Operation {
         this.second = second;
     }
 
+    public Operation(double first) {
+        this.first = first;
+
+    }
+
     private double first;
     private double second;
     private String operation;
