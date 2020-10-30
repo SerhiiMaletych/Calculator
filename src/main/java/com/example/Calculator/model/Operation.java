@@ -19,6 +19,12 @@ public class Operation {
 
     @javax.persistence.Id
     private Long Id;
+
+    public Operation(double first, double second) {
+        this.first = first;
+        this.second = second;
+    }
+
     private double first;
     private double second;
     private String operation;
