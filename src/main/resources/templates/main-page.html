@@ -12,8 +12,8 @@
 <form  action="#" th:action="@{/}" th:object="${operation}" method="POST">
     <h2 class="h2-top">Please enter your numbers here:</h2>
 
-    <input style="font-size: 23px; margin-left: 90px"  type="text" th:field="*{first}"/>
-    <input style="font-size: 23px; margin-left: 90px" type="text" th:field="*{second}"/>
+    <input class="user-input"  type="text" th:field="*{first}"/>
+    <input class="user-input"  type="text" th:field="*{second}"/>
     <p class="buttons">
         <input type="submit" class="button" name="add" value="+"/>
         <input type="submit" class="button" name="subtract" value="-"/>
