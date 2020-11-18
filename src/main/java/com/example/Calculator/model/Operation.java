@@ -11,7 +11,6 @@ import javax.persistence.Table;
 
 @Builder
 @AllArgsConstructor
-@NoArgsConstructor
 @Data
 @Entity
 @Table(name = "operations")
@@ -23,6 +22,10 @@ public class Operation {
     private double second;
     private String operation;
     private String result;
+
+    public Operation() {
+
+    }
 
     public Operation(double first, double second) {
         this.first = first;

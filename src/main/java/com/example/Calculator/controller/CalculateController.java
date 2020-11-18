@@ -54,6 +54,11 @@ public class CalculateController {
         model.addAttribute("result", service.sqrt(operation));
         return "main-page";
     }
+    @PostMapping(value="/", params="prime")
+    public String prime(@ModelAttribute("operation")  Operation operation, Model model ){
+        model.addAttribute("result", service.prime(operation));
+        return "main-page";
+    }
 
     @PostMapping(value = "/", params = "clear")
     public String clear(@ModelAttribute("operation") Operation operation, Model model) {
