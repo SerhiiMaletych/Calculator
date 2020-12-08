@@ -42,7 +42,7 @@ public class CalculateService {
 
         else if (model.getFirst() % 2 == 0)
             return "Not a prime number";
-        for (int i = 3; i <= Math.sqrt(model.getFirst()); i = i + 2) {
+        for (int i = 2; i <= Math.sqrt(model.getFirst()); i++) {
             if (model.getFirst() % i == 0)
                 return "Not a prime number";
         }
