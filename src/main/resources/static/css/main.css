@@ -1,5 +1,5 @@
 body {
-    background-color: darkkhaki;
+    background-color: lightslategrey;
 }
 
 .button {
@@ -7,17 +7,25 @@ body {
     display: inline-flex;
     width: 50px;
     height: 50px;
-    text-align-all: center;
+    text-align: center;
+    border-radius: 4px;
 
 
 }
+
+
+.button:hover {
+    background-color: red;
+}
+
 
 .main-form {
     height: 300px;
     width: 500px;
     background-color: azure;
     margin-left: 380px;
-    margin-top: 50px;
+    margin-top: 80px;
+    border-radius: 8px;
 
 }
 
@@ -28,10 +36,20 @@ body {
 .user-input {
     margin-left: 90px;
     font-size: 23px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    border-radius: 4px;
+}
+
+.user-input:active {
+    background-color: lightgray;
+}
+
+.user-input:hover {
+    background-color: lightgray;
 }
 
 .resultText {
-
     font-size: 30px;
 
 }
@@ -45,4 +63,5 @@ body {
 
 .h2-top {
     text-align: center;
+    color: red;
 }
