@@ -9,6 +9,8 @@ import org.springframework.stereotype.Service;
 public class CalculateService {
 
     public double add(Operation model) {
+
+
         return model.getFirst() + model.getSecond();
 
     }
