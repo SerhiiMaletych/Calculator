@@ -9,8 +9,6 @@ import org.springframework.stereotype.Service;
 public class CalculateService {
 
     public double add(Operation model) {
-
-
         return model.getFirst() + model.getSecond();
 
     }
@@ -49,6 +47,27 @@ public class CalculateService {
                 return "Not a prime number";
         }
         return "Prime number";
+    }
+
+    public double power(Operation model) {
+        return model.getFirst()*model.getFirst();
+    }
+
+    public double findCos(Operation model) {
+        return Math.cos(model.getFirst());
+    }
+
+    public double findSin(Operation model) {
+        return Math.sin(model.getFirst());
+    }
+
+    public double findTan(Operation model) {
+        return Math.tan(model.getFirst());
+
+    }
+
+    public double findLog(Operation model) {
+        return Math.log(model.getFirst());
     }
 
 

@@ -12,16 +12,24 @@
 <form  action="#" th:action="@{/}" th:object="${operation}" method="POST">
     <h2 class="h2-top">Please enter your numbers here:</h2>
 
-    <input class="user-input"  type="text" pattern= "[0-9]+" th:field="*{first}"/>
+    <input class="user-input" required  type="text" pattern= "[0-9]+" th:field="*{first}"/>
     <input class="user-input"  type="text" pattern= "[0-9]+" th:field="*{second}"/>
     <p class="buttons">
         <input type="submit" class="button "  name="add" value="+"/>
         <input type="submit" class="button " name="subtract" value="-"/>
         <input type="submit" class="button " name="multiply" value="*"/>
-        <input type="submit" class="button " name="divide" value="/"/>
+        <input type="submit" class="button " name="divide" value="/"/> <br>
+
         <input type="submit" class="button" name="sqrt" value="sqrt" />
         <input type="submit" class="button" name="prime" value="prime" />
-        <input type="submit" class="button" name="clear" value="Clear"/>
+        <input type="submit" class="button" name="power" value="power" />
+        <input type="submit" class="button" name="clear" value="clear"/> <br>
+
+
+        <input type="submit" class="button" name="sin" value="sin" />
+        <input type="submit" class="button" name="cos" value="cos" />
+        <input type="submit" class="button" name="tan" value="tan" />
+        <input type="submit" class="button" name="log" value="log" />
 
     </p>
 

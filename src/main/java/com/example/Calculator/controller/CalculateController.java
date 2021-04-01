@@ -60,6 +60,36 @@ public class CalculateController {
         return "main-page";
     }
 
+    @PostMapping(value="/", params="power")
+    public String power(@ModelAttribute("operation")  Operation operation, Model model ){
+        model.addAttribute("result", service.power(operation));
+        return "main-page";
+    }
+
+    @PostMapping(value="/", params="sin")
+    public String sin(@ModelAttribute("operation")  Operation operation, Model model ){
+        model.addAttribute("result", service.findSin(operation));
+        return "main-page";
+    }
+
+    @PostMapping(value="/", params="cos")
+    public String cos(@ModelAttribute("operation")  Operation operation, Model model ){
+        model.addAttribute("result", service.findCos(operation));
+        return "main-page";
+    }
+
+    @PostMapping(value="/", params="tan")
+    public String tan(@ModelAttribute("operation")  Operation operation, Model model ){
+        model.addAttribute("result", service.findTan(operation));
+        return "main-page";
+    }
+
+    @PostMapping(value="/", params="log")
+    public String log(@ModelAttribute("operation")  Operation operation, Model model ){
+        model.addAttribute("result", service.findLog(operation));
+        return "main-page";
+    }
+
     @PostMapping(value = "/", params = "clear")
     public String clear(@ModelAttribute("operation") Operation operation, Model model) {
         model.addAttribute("operation", service.clearResult(operation));

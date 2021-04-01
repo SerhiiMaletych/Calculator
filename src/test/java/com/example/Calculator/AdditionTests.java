@@ -39,7 +39,7 @@ public class AdditionTests {
         double result2 = calculateService.add(op2);
 
         assertEquals(30000.0, result1);
-        assertEquals(600000, result2);
+        assertEquals(60000, result2);
 
     }
 

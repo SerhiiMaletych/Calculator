@@ -30,7 +30,7 @@ dependencies {
 	testCompile group: 'org.springframework', name: 'spring-test', version: '5.2.9.RELEASE'
 	testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.3.4.RELEASE'
 	annotationProcessor 'org.projectlombok:lombok'
-	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
