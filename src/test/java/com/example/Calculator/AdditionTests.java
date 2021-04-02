@@ -17,29 +17,25 @@ public class AdditionTests {
 
     @Test
     public void testAdd() {
-        Operation op1 = new Operation(1.0, 2.0);
-        Operation op2 = new Operation(1000.0, 5000.0);
+        Operation op1 = new Operation(1, 2);
+        Operation op2 = new Operation(1000, 5000);
 
-        double result1 = calculateService.add(op1);
-        double result2 = calculateService.add(op2);
-
-        assertEquals(3.0, result1);
-        assertEquals(6000, result2);
+        assertEquals(3, calculateService.add(op1));
+        assertEquals(6000, calculateService.add(op2));
 
     }
 
     @Test
     public void testAdd2() {
-        Operation op1 = new Operation(10000.0, 20000.0);
-        Operation op2 = new Operation(10000.0, 50000.0);
+        Operation op1 = new Operation(10000, 20000);
+        Operation op2 = new Operation(10000, 50000);
 
-        double result1 = calculateService.add(op1);
-        double result2 = calculateService.add(op2);
-
-        assertEquals(30000.0, result1);
-        assertEquals(60000, result2);
+        assertEquals(30000, calculateService.add(op1));
+        assertEquals(60000, calculateService.add(op2));
 
     }
+
+
 
 
 }

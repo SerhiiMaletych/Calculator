@@ -22,13 +22,8 @@ public class PrimeTests {
         Operation op2 = new Operation(29);
         Operation op3 = new Operation(83);
 
-        String result1 = calculateService.prime(op1);
-        String result2 = calculateService.prime(op2);
-        String result3 = calculateService.prime(op3);
-
-
-        assertEquals("Not a prime number", result1);
-        assertEquals("Prime number", result2);
-        assertEquals("Prime number", result3);
+        assertEquals(calculateService.prime(op1),"Not a prime number");
+        assertEquals(calculateService.prime(op2),"Prime number");
+        assertEquals(calculateService.prime(op3),"Prime number" );
     }
 }

@@ -25,7 +25,6 @@ public class CalculateService {
 
     public double divide(Operation model) {
 
-
         return model.getFirst() / model.getSecond();
     }
 

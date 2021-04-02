@@ -18,27 +18,21 @@ public class MultiplicationTests {
 
     @Test
     public void testMultiply() {
-        Operation op1 = new Operation(6.0, 2.0);
-        Operation op2 = new Operation(100.0, 500.0);
+        Operation op1 = new Operation(6, 2);
+        Operation op2 = new Operation(100, 500);
 
-        double result1 = calculateService.multiply(op1);
-        double result2 = calculateService.multiply(op2);
-
-        assertEquals(12.0, result1);
-        assertEquals(50000.0, result2);
+        assertEquals(12, calculateService.multiply(op1));
+        assertEquals(50000, calculateService.multiply(op2));
 
     }
 
     @Test
     public void testMultiply2() {
-        Operation op1 = new Operation(200.0, 200.0);
-        Operation op2 = new Operation(50000.0, 300.0);
+        Operation op1 = new Operation(100, 100);
+        Operation op2 = new Operation(50000, 300);
 
-        double result1 = calculateService.multiply(op1);
-        double result2 = calculateService.multiply(op2);
-
-        assertEquals(40000.0, result1);
-        assertEquals(15000000.0, result2);
+        assertEquals(10000, calculateService.multiply(op1));
+        assertEquals(15000000, calculateService.multiply(op2));
 
     }
 

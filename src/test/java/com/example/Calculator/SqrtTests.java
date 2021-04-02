@@ -22,13 +22,9 @@ public class SqrtTests {
         Operation op2 = new Operation(81);
         Operation op3 = new Operation(256);
 
-        double result1 = calculateService.sqrt(op1);
-        double result2 = calculateService.sqrt(op2);
-        double result3 = calculateService.sqrt(op3);
-
-        assertEquals(6, result1);
-        assertEquals(9, result2);
-        assertEquals(16, result3);
+        assertEquals(6, calculateService.sqrt(op1));
+        assertEquals(9, calculateService.sqrt(op2));
+        assertEquals(16, calculateService.sqrt(op3));
 
     }
 
@@ -38,13 +34,9 @@ public class SqrtTests {
         Operation op2 = new Operation(62500);
         Operation op3 = new Operation(10000);
 
-        double result1 = calculateService.sqrt(op1);
-        double result2 = calculateService.sqrt(op2);
-        double result3 = calculateService.sqrt(op3);
-
-        assertEquals(30, result1);
-        assertEquals(250, result2);
-        assertEquals(100, result3);
+        assertEquals(30, calculateService.sqrt(op1));
+        assertEquals(250, calculateService.sqrt(op2));
+        assertEquals(100, calculateService.sqrt(op3));
 
     }
 }
