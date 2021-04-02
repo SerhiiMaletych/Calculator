@@ -1,6 +1,7 @@
 package com.example.Calculator.service;
 
 
+
 import com.example.Calculator.model.Operation;
 import org.springframework.stereotype.Service;
 
@@ -22,10 +23,9 @@ public class CalculateService {
 
     }
 
-    public Object divide(Operation model) {
-        if (model.getSecond() == 0) {
-            return "you can't divide by zero";
-        }
+    public double divide(Operation model) {
+
+
         return model.getFirst() / model.getSecond();
     }
 
