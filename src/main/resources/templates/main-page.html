@@ -14,23 +14,30 @@
 
     <input class="user-input"    th:field="*{first}"/>
     <input class="user-input"   th:field="*{second}"/>
-    <p class="buttons">
+    <p class="main-buttons">
         <input type="submit" class="button "  name="add" value="+"/>
         <input type="submit" class="button " name="subtract" value="-"/>
         <input type="submit" class="button " name="multiply" value="*"/>
-        <input type="submit" class="button " name="divide" value="/"/> <br>
-
-        <input type="submit" class="button" name="sqrt" value="sqrt" />
-        <input type="submit" class="button" name="prime" value="prime" />
-        <input type="submit" class="button" name="power" value="power" />
-        <input type="submit" class="button" name="clear" value="clear"/> <br>
-
-        <input type="submit" class="button" name="sin" value="sin" />
-        <input type="submit" class="button" name="cos" value="cos" />
-        <input type="submit" class="button" name="tan" value="tan" />
-        <input type="submit" class="button" name="log" value="log" />
-
+        <input type="submit" class="button " name="divide" value="/"/>
+        <input type="submit" class="button" name="clear" value="clear"/>
+        <br>
     </p>
+    <div class="container">
+        <label for="checkbox" class="additional-button">Additional buttons</label>
+        <input id="checkbox" type="checkbox" />
+        <ul>
+            <input type="submit" class="button" name="sqrt" value="sqrt" />
+            <input type="submit" class="button" name="prime" value="prime" />
+            <input type="submit" class="button" name="power" value="power" />
+            <input type="submit" class="button" name="log" value="log" />
+
+            <br>
+            <input type="submit" class="button" name="sin" value="sin" />
+            <input type="submit" class="button" name="cos" value="cos" />
+            <input type="submit" class="button" name="tan" value="tan" />
+
+        </ul>
+    </div>
 
       <p class="result resultText" th:text="'Result: '"></p>
     <p  class="result" th:text=" ${result}"></p>
@@ -38,6 +45,8 @@
 
 </form>
 </div>
+
+
 
 </body>
 </html>

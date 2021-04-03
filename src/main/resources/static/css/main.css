@@ -13,6 +13,16 @@ body {
 
 }
 
+.additional-button {
+    background-color: lightgreen;
+    display: inline-flex;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    border-radius: 6px;
+    margin: 2px;
+}
+
 .button:hover {
     background-color: red;
 }
@@ -27,9 +37,10 @@ body {
 
 }
 
-.buttons {
-    margin-left: 25%;
+.main-buttons {
+    margin-left: 19%;
 }
+
 
 .user-input {
     margin-left: 90px;
@@ -63,4 +74,22 @@ body {
     text-align: center;
     color: red;
     margin-top: 10px;
+}
+
+ul {
+    display: none;
+    margin-left: -10%;
+}
+
+#checkbox {
+    opacity: 0;
+}
+
+#checkbox:checked + ul {
+
+    display: block;
+}
+
+.container {
+    margin-left: 19%;
 }
