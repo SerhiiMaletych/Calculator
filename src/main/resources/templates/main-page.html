@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>Calculator</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script>$('#container').on('hide.bs.dropdown', function () {
+        return false;
+    });
+
+    </script>
 </head>
 <body>
 
@@ -22,16 +27,14 @@
         <input type="submit" class="button" name="clear" value="clear"/>
         <br>
     </p>
-    <div class="container">
+    <div class="container" id="container">
         <label for="checkbox" class="additional-button">Additional buttons</label>
         <input id="checkbox" type="checkbox" />
-        <ul>
+        <ul >
             <input type="submit" class="button" name="sqrt" value="sqrt" />
             <input type="submit" class="button" name="prime" value="prime" />
             <input type="submit" class="button" name="power" value="power" />
             <input type="submit" class="button" name="log" value="log" />
-
-            <br>
             <input type="submit" class="button" name="sin" value="sin" />
             <input type="submit" class="button" name="cos" value="cos" />
             <input type="submit" class="button" name="tan" value="tan" />
