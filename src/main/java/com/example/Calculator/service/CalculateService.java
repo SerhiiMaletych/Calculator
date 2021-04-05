@@ -53,15 +53,15 @@ public class CalculateService {
     }
 
     public double findCos(Operation model) {
-        return Math.cos(model.getFirst());
+        return Math.floor(Math.cos(model.getFirst())*100)/100;
     }
 
     public double findSin(Operation model) {
-        return Math.sin(model.getFirst());
+        return Math.floor(Math.sin(model.getFirst())*100)/100;
     }
 
     public double findTan(Operation model) {
-        return Math.tan(model.getFirst());
+        return Math.floor(Math.tan(model.getFirst())*100)/100;
 
     }
 
