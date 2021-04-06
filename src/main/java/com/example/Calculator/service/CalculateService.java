@@ -65,6 +65,7 @@ public class CalculateService {
 
     }
 
+
     public double findLog(Operation model) {
         return Math.log(model.getFirst());
     }

@@ -13,6 +13,7 @@ body {
     margin-bottom: 2px;
     margin-top: 2px;
     border-radius: 4px;
+    text-align: center;
 }
 
 .user-input:active {
@@ -23,24 +24,51 @@ body {
     background-color: lightgray;
 }
 .button {
-    background-color: lightblue;
-    display: inline-flex;
     width: 50px;
     height: 50px;
-    text-align: center;
-    border-radius: 6px;
     margin: 2px;
+    background-image: linear-gradient(135deg, #008aff, #86d472);
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 0.75em;
+    font-weight: 600;
+    padding: 4px;
+    text-decoration: none;
+    z-index: 2;
+
+
 
 }
 
+.button:hover {
+    color: #fff;
+}
+
+.button .buttonspan {
+    align-items: center;
+    background: #0e0e10;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    transition: background 0.5s ease;
+    width: 100%;
+}
+
+.button:hover .buttonspan {
+    background: transparent;
+}
+
 .additional-button {
-    background-color: lightgreen;
+    background-color: lightcoral;
     display: inline-flex;
     width: 130px;
     height: 50px;
     text-align: center;
     border-radius: 6px;
     margin: 2px 2px 2px 21%;
+    border: 2px solid purple;
 }
 
 .button:hover {
